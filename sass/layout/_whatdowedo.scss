@@ -18,8 +18,7 @@
 }
 
 .whatdowedo-list-text {
-  @extend %align-items;
-  justify-content: center;
+  @include flex(flex, center, center, null, null);
   color: #ffffff;
   position: absolute;
   left: 0;

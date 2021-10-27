@@ -40,8 +40,7 @@
 }
 
 .our-advantages-icon-wrap {
-  @extend %align-items;
-  justify-content: center;
+  @include flex(flex, center, center, null, null);
   width: 270px;
   height: 120px;
   background: #f5f4fa;

@@ -1,0 +1,32 @@
+@mixin font($ff, $fs, $fw, $lh, $ls, $lc) {
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $lc;
+}
+
+@mixin flex($disp, $jc, $al, $fd, $fw) {
+  display: $disp;
+  justify-content: $jc;
+  align-items: $al;
+  flex-direction: $fd;
+  flex-wrap: $fw;
+}
+
+@mixin transition($one, $two, $three, $time, $func) {
+  transition-property: $one, $two, $three;
+  transition-duration: $time;
+  transition-timing-function: $func;
+}
+
+@mixin container($wh, $ht, $pl, $pr, $ml, $mr, $dis) {
+  width: $wh;
+  height: $ht;
+  padding-left: $pl;
+  padding-right: $pr;
+  margin-left: $ml;
+  margin-right: $mr;
+  display: $dis;
+}
