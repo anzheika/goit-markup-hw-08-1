@@ -1,0 +1,36 @@
+.whatdowedo {
+  padding-bottom: 94px;
+}
+
+.whatdowedo-list {
+  @extend %align-items;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.whatdowedo-list-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.whatdowedo-text-wrapper {
+  position: relative;
+}
+
+.whatdowedo-list-text {
+  @extend %align-items;
+  justify-content: center;
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+}

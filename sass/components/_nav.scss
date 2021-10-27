@@ -1,0 +1,81 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  @extend %align-items;
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+  &:focus .nav-icon,
+  &:hover .nav-icon {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+
+.nav-icon {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+  font-family: inherit;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.nav-link-left {
+  color: var(--title-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+
+  &.current {
+    color: var(--accent-color);
+  }
+}
+
+.nav-email,
+.nav-number {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.nav-item-mail {
+  margin-right: 50px;
+}
