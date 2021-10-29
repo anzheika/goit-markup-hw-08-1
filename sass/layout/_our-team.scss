@@ -13,6 +13,13 @@
     margin-left: -30px;
     margin-top: -30px;
   }
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 .our-team-list__item {
   // width: calc((100% - 60px) / 4);
@@ -26,6 +33,11 @@
   border-radius: 0px 0px 4px 4px;
   @media screen and(min-width: 768px) {
     width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: calc((100% - 60px) / 4);
     margin-left: 30px;
     margin-top: 30px;
   }

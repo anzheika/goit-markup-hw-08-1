@@ -1,5 +1,18 @@
 .our-clients-list {
-  @include flex(flex, center, center, null, null);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -30px;
+  margin-top: -30px;
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  @media screen and(min-width: 1200px) {
+    @include flex(flex, center, center, null, nowrap);
+  }
 }
 
 .our-clients-link {
@@ -18,11 +31,24 @@
 }
 
 .our-clients-item {
-  width: 170px;
+  // width: 170px;
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and(min-width: 768px) {
+    width: 226px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 170px;
+  }
 
   &:hover,
   &:focus {
@@ -31,7 +57,7 @@
 }
 
 .our-clients-item + .our-clients-item {
-  margin-left: 30px;
+  // margin-left: 30px;
 }
 
 .our-cliens-icon {
