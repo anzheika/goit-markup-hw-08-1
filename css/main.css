@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 
-.nav-link, .hero, .hero__container, .our-advantages, .our-advantages-list, .whatdowedo-list, .our-team-list {
+.nav-link, .hero, .hero__container, .our-advantages, .our-advantages-list, .whatdowedo-list {
   display: flex;
   align-items: center;
 }
@@ -58,11 +58,13 @@ ol {
 
 link {
   display: block;
+  max-width: 100%;
 }
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   height: auto;
 }
 
@@ -84,15 +86,27 @@ ul {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .current::after {
@@ -596,14 +610,19 @@ ul {
 .section-title {
   font-family: inherit;
   text-align: center;
-  color: var(--title-text-color);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  letter-spacing: 0.03em;
   margin: 0 auto;
-  margin-bottom: 50px;
+  font-family: "roboto";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: calc(33 / 28);
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    margin-bottom: 30px;
+  }
 }
 
 .page-header {
@@ -741,16 +760,31 @@ ul {
 }
 
 .our-team-list {
-  margin-left: -30px;
-  margin-top: -30px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .our-team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .our-team-list__item {
-  width: calc((100% - 60px) / 4);
-  margin-left: 30px;
+  width: 100%;
   margin-top: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .our-team-list__item {
+    width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .our-team-members {
