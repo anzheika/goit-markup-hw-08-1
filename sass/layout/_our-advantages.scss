@@ -1,30 +1,64 @@
 .our-advantages {
-  @extend %align-items;
-  padding-bottom: 95px;
-  padding-top: 95px;
+  // @extend %align-items;
+  // display: flex;
+  // flex-direction: column;
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 .our-advantages-list {
-  @extend %align-items;
-  margin-left: -30px;
+  // @extend %align-items;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // margin-left: -30px;
   margin-top: -30px;
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 .advantages-list-item {
-  width: calc(100% / 4 - 30px);
-  margin-left: 30px;
+  // width: calc(100% / 4 - 30px);
+  width: 450px;
+  // margin-left: 30px;
   margin-top: 30px;
 
   &:last-child {
     margin-right: 0;
   }
+  @media screen and(min-width: 768px) {
+    width: 354px;
+    height: 251px;
+    margin-left: 30px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  }
 }
 
 .advantages-title {
+  text-align: center;
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  @media screen and(min-width: 768px) {
+    text-align: left;
+    line-height: calc(14 / 16);
+  }
 }
 
 .our-advantages-list p {
@@ -35,15 +69,25 @@
 }
 
 .our-advantages-icon {
-  width: 70px;
+  width: 100%;
   height: 70px;
 }
 
 .our-advantages-icon-wrap {
   @include flex(flex, center, center, null, null);
-  width: 270px;
+  // width: 270px;
+  // height: 120px;
+  width: 450px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
+  @media screen and(min-width: 768px) {
+    width: 354px;
+    // height: 120px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 270px;
+    height: 120px;
+  }
 }

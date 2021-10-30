@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 
-.nav-link, .hero, .hero__container, .our-advantages, .our-advantages-list, .whatdowedo-list {
+.nav-link, .hero, .hero__container, .whatdowedo-list {
   display: flex;
   align-items: center;
 }
@@ -691,19 +691,40 @@ ul {
   margin: 0 auto 30px;
 }
 
-.our-advantages {
-  padding-bottom: 95px;
-  padding-top: 95px;
+@media screen and (min-width: 1200px) {
+  .our-advantages {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .our-advantages-list {
-  margin-left: -30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: -30px;
 }
 
+@media screen and (min-width: 768px) {
+  .our-advantages-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-advantages-list {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .advantages-list-item {
-  width: calc(100% / 4 - 30px);
-  margin-left: 30px;
+  width: 450px;
   margin-top: 30px;
 }
 
@@ -711,13 +732,36 @@ ul {
   margin-right: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages-list-item {
+    width: 354px;
+    height: 251px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list-item {
+    width: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  }
+}
+
 .advantages-title {
+  text-align: center;
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-title {
+    text-align: left;
+    line-height: calc(14 / 16);
+  }
 }
 
 .our-advantages-list p {
@@ -728,7 +772,7 @@ ul {
 }
 
 .our-advantages-icon {
-  width: 70px;
+  width: 100%;
   height: 70px;
 }
 
@@ -736,11 +780,24 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .our-advantages-icon-wrap {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-advantages-icon-wrap {
+    width: 270px;
+    height: 120px;
+  }
 }
 
 .whatdowedo {
