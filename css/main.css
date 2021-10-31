@@ -221,12 +221,18 @@ ul {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-logo-web {
+    text-align: left;
+  }
+}
+
 .footer-logo-studio {
   color: white;
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
-  line-height: 35, 96px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.03em;
 }
 
@@ -1100,6 +1106,16 @@ ul {
   .footer-container {
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: normal;
   }
 }
 
@@ -1119,11 +1135,25 @@ ul {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-logo-box {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+
 .footer-social-list-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social-list-box {
+    margin-bottom: 0;
+    align-items: flex-start;
+  }
 }
 
 .footer-social-icon-list {
@@ -1208,9 +1238,34 @@ ul {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-link {
+    text-align: left;
+  }
+}
+
 .subscribe-wrapper {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-wrapper {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-wrapper {
+    margin-left: auto;
+    align-items: normal;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-footer-input-wrapper {
+    display: flex;
+  }
 }
 
 .subscribe-footer-form-title {
@@ -1223,6 +1278,12 @@ ul {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-footer-form-title {
+    text-align: left;
+  }
 }
 
 .subscribe-footer-form-message {
@@ -1254,6 +1315,14 @@ ul {
   font-family: inherit;
   font-weight: normal;
   font-size: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-footer-form-message {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .subscribe-footer-button {
