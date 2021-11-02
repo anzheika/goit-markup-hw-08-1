@@ -59,7 +59,10 @@
 .work-examples-list-item {
   // margin-right: 30px;
   // width: 370px;
-  width: 450px;
+  width: 100%;
+  @media screen and(min-width: 480px) {
+    width: 450px;
+  }
   @media screen and(min-width: 768px) {
     width: 354px;
     margin-right: 30px;
@@ -76,7 +79,6 @@
 
 .work-examples-list-item:nth-child(3n + 3) {
   margin-right: 0;
-  margin-bottom: 0;
 }
 
 .work-examples-list-item:not(:last-child) {

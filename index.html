@@ -18,9 +18,9 @@
 
   <body>
     <!--Шапка сайта-->
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container header-container">
-        <nav class="nav-header">
+        <nav class="nav-logoweb">
           <a href="/" class="logoweb">Web<span class="logostudio">Studio</span></a>
           <ul class="nav-header">
             <li class="nav-item link">
@@ -49,8 +49,60 @@
             </a>
           </li>
         </ul>
+        <div class="menu-open-btn-wrapper">
+          <button type="button" class="menu-open-btn">
+            <svg class="menu-open-icon" width="24" height="16">
+              <use href="./images/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-    </header> -->
+      <div class="mob-menu-backdrop">
+        <div class="mob-menu-content">
+          <button type="button" class="mob-menu-close-btn">
+            <svg class="mob-menu-close-icon" width="18" height="11">
+              <use href="./images/sprite.svg#icon-vector"></use>
+            </svg>
+          </button>
+
+          <ul class="mob-menu-nav">
+            <li class="mob-menu-nav-item">
+              <a href="./index.html" class="mob-menu-nav-link nav-link-one current-link link"
+                >Студия</a
+              >
+            </li>
+            <li class="mob-menu-nav-item">
+              <a href="./portfolio.html" class="mob-menu-nav-link nav-link-two link">Портфолио</a>
+            </li>
+            <li class="mob-menu-nav-item">
+              <a class="mob-menu-nav-link nav-link-three link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mob-menu-contacts">
+            <li class="mob-menu-item-tel">
+              <a href="tel:+380991111111" class="mob-menu-nav-tel"> +38 099 111 11 11 </a>
+            </li>
+            <li class="mob-menu-item-mail">
+              <a href="mailto:info@devstudio.com" class="mob-menu-nav-mail"> info@devstudio.com </a>
+            </li>
+          </ul>
+          <ul class="mob-menu-social-link-list">
+            <li class="mob-menu-social-item">
+              <a href="" class="mob-menu-social-item-link">Instagram</a>
+            </li>
+            <li class="mob-menu-social-item">
+              <a href="" class="mob-menu-social-item-link menu-social-item-link">Twitter</a>
+            </li>
+            <li class="mob-menu-social-item">
+              <a href="" class="mob-menu-social-item-link menu-social-item-link">Facebook</a>
+            </li>
+            <li class="mob-menu-social-item">
+              <a href="" class="mob-menu-social-item-link menu-social-item-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <!--<Баннер и кнопка для заказа услуги-->
       <section class="hero">
@@ -510,5 +562,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

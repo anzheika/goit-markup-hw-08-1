@@ -17,6 +17,7 @@
 .hero__container {
   @extend %align-items;
   flex-direction: column;
+  width: 100%;
 }
 .hero-title {
   font-family: inherit;
@@ -30,8 +31,15 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   // max-width: 670px;
-  max-width: 360px;
+  width: 100%;
   margin: 0 auto 30px;
+  // width: 360px;
+  @media screen and(min-width: 420px) {
+    width: 360px;
+  }
+  @media screen and(min-width: 480px) {
+    width: 360px;
+  }
   @media screen and(min-width: 1200px) {
     font-size: 44px;
     line-height: calc(60 / 44);
