@@ -4,7 +4,7 @@
   margin-left: auto;
   display: none;
   @media screen and(min-width: 768px) {
-    // display: contents;
+    display: initial;
   }
 }
 .nav-logoweb {
@@ -16,7 +16,10 @@
   align-items: center;
   display: none;
   @media screen and(min-width: 768px) {
-    display: none;
+    display: initial;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
   }
 }
 
