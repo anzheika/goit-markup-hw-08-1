@@ -99,7 +99,7 @@
   margin-bottom: 32px;
 }
 .mob-menu-nav-item:last-child {
-  margin-bottom: 302px;
+  margin-bottom: 202px;
 }
 .mob-menu-nav-link {
   color: var(--title-text-color);
@@ -141,8 +141,11 @@
   font-size: 24px;
   line-height: calc(28 / 24);
   letter-spacing: 0.02em;
-
   color: #757575;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .mob-menu-social-link-list {
   display: flex;
