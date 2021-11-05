@@ -173,25 +173,49 @@
       </section>
 
       <!--Чем мы занимаемся-->
-      <section class="whatdowedo visually-hidden">
+      <section class="whatdowedo">
         <div class="container container-whatdowedo">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="whatdowedo-list">
             <li class="whatdowedo-list-item">
               <div class="whatdowedo-text-wrapper">
-                <img src="images/img.jpg" width="370" alt="A person typying on the laptop" />
+                <img
+                  srcset="
+                    images/whatdowedo/whatdowedodesc.png   1x,
+                    images/whatdowedo/whatdowedodesc2x.png 2x
+                  "
+                  src="images/whatdowedo/whatdowedodesc.png"
+                  width="370"
+                  alt="A person typying on the laptop"
+                />
                 <p class="whatdowedo-list-text">Десктопные приложения</p>
               </div>
             </li>
             <li class="whatdowedo-list-item">
               <div class="whatdowedo-text-wrapper">
-                <img src="images/img2.jpg" width="370" alt="A preson looking up the phone" />
+                <img
+                  srcset="
+                    images/whatdowedo/whatdowedomob.png   1x,
+                    images/whatdowedo/whatdowedomob2x.png 2x
+                  "
+                  src="images/whatdowedo/whatdowedomob.png"
+                  width="370"
+                  alt="A preson looking up the phone"
+                />
                 <p class="whatdowedo-list-text">Мобильные приложения</p>
               </div>
             </li>
             <li class="whatdowedo-list-item">
               <div class="whatdowedo-text-wrapper">
-                <img src="images/img3.jpg" width="370" alt="A tablet with a picture" />
+                <img
+                  srcset="
+                    images/whatdowedo/whatdowedodesigner.png   1x,
+                    images/whatdowedo/whatdowedodesigner2x.png 2x
+                  "
+                  src="images/whatdowedo/whatdowedodesigner.png"
+                  width="370"
+                  alt="A tablet with a picture"
+                />
                 <p class="whatdowedo-list-text">Дизайнерские решения</p>
               </div>
             </li>
@@ -205,11 +229,35 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="our-team-list">
             <li class="our-team-list__item">
-              <img
-                src="images/productdesigner.jpg"
-                width="270"
-                alt="Team member product designer"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    images/our-team/main/productdesigner-main-min.png   1x,
+                    images/our-team/main/productdesigner-main2x-min.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    images/our-team/tablet/productdesigner-tablet-min.png   1x,
+                    images/our-team/tablet/productdesigner-tablet2x-min.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    images/our-team/mob/productdesigner-mob.png   1x,
+                    images/our-team/mob/productdesigner2x-mob.png 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="images/our-team/main/productdesigner-main-min.png"
+                  width="270"
+                  alt="Team member product designer"
+                />
+              </picture>
               <div class="our-team-list-content">
                 <h3 class="our-team-members">Игорь Демьяненко</h3>
                 <p class="our-team-position">Product designer</p>
@@ -247,7 +295,11 @@
             </li>
             <li class="our-team-list__item">
               <img
-                src="images/frontenddeveloper.jpg"
+                srcset="
+                  images/our-team/frontenddeveloper-min.jpg   1x,
+                  images/our-team/frontenddeveloper2x-min.jpg 2x
+                "
+                src="images/our-team/frontenddeveloper-min.jpg"
                 width="270"
                 alt="Team member Frontend developer"
               />
@@ -287,7 +339,15 @@
               </div>
             </li>
             <li class="our-team-list__item">
-              <img src="images/marketing.jpg" width="270" alt="Team member for marketing" />
+              <img
+                srcset="
+                  images/our-team/marketing-min.jpg   1x,
+                  images/our-team/marketing2x-min.jpg 2x
+                "
+                src="images/our-team/marketing-min.jpg"
+                width="270"
+                alt="Team member for marketing"
+              />
               <div class="our-team-list-content">
                 <h3 class="our-team-members">Николай Тарасов</h3>
                 <p class="our-team-position">Marketing</p>
@@ -324,7 +384,15 @@
               </div>
             </li>
             <li class="our-team-list__item">
-              <img src="images/uidesigner.jpg" width="270" alt="Team member ui designer" />
+              <img
+                srcset="
+                  images/our-team/uidesigner-min.jpg   1x,
+                  images/our-team/uidesigner2x-min.jpg 2x
+                "
+                src="images/our-team/uidesigner-min.jpg"
+                width="270"
+                alt="Team member ui designer"
+              />
               <div class="our-team-list-content">
                 <h3 class="our-team-members">Михаил Ермаков</h3>
                 <p class="our-team-position">UI designer</p>
