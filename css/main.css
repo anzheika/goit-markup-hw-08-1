@@ -195,9 +195,15 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: left;
-  margin-right: 95px;
+  margin-right: auto;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+@media screen and (min-width: 480px) {
+  .logoweb {
+    margin-right: 94px;
+  }
 }
 
 .logostudio {
@@ -832,9 +838,8 @@ ul {
   height: 100vh;
   background-color: var(--primary-bg-color);
   display: flex;
-  flex-direction: column;
   position: relative;
-  padding: 48px 83px 0 40px;
+  padding: 40px 40px 0 40px;
 }
 
 .mob-menu-close-btn {
@@ -881,10 +886,6 @@ ul {
   margin-bottom: 32px;
 }
 
-.mob-menu-nav-item:last-child {
-  margin-bottom: 202px;
-}
-
 .mob-menu-nav-link {
   color: var(--title-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -899,12 +900,13 @@ ul {
 }
 
 .mob-menu-social-item {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
   color: var(--accent-color);
   position: relative;
 }
 
 .mob-menu-social-item:not(:last-child) {
-  margin-right: auto;
+  margin-right: 20px;
 }
 
 .mob-menu-nav-tel {
@@ -942,6 +944,7 @@ ul {
 .mob-menu-social-link-list {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .mob-menu-social-item-link {
@@ -954,15 +957,14 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.menu-social-item-link::before {
-  content: '';
-  position: absolute;
-  width: 22px;
-  background-color: rgba(36, 11, 11, 0.2);
-  border: 1px solid rgba(36, 11, 11, 0.2);
-  transform: rotate(90deg);
-  left: -30%;
-  top: 8px;
+.mob-menu-wrapper {
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.mob-menu-contacts-wrapper {
+  margin-bottom: 48px;
 }
 
 .hero {
