@@ -555,13 +555,26 @@ ul {
 }
 
 .modal {
-  width: 528px;
-  min-height: 582px;
+  width: 96%;
+  min-height: 609px;
   background-color: white;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   position: relative;
   padding: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal-btn-icon {
@@ -665,7 +678,6 @@ ul {
   width: 100%;
   resize: none;
   height: 120px;
-  width: 448px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
@@ -700,9 +712,35 @@ ul {
   border-color: var(--accent-color);
 }
 
+.modal-form-checkbox-label-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: calc(14/12);
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-checkbox-label-text {
+    font-size: 14px;
+    line-height: calc(24/14);
+  }
+}
+
 .modal-form-checkbox-link {
   margin-left: 4px;
   color: var(--accent-color);
+  font-size: 12px;
+  line-height: calc(14/12);
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-checkbox-link {
+    font-size: 14px;
+    line-height: calc(24/14);
+  }
 }
 
 .subscribe-checkbox-wrapper {
@@ -878,6 +916,10 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.mob-menu-nav-item:last-child {
+  margin-bottom: 50px;
+}
+
 .nav-link-one {
   margin-bottom: 35px;
 }
@@ -900,20 +942,20 @@ ul {
 }
 
 .mob-menu-social-item {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
   color: var(--accent-color);
   position: relative;
 }
 
 .mob-menu-social-item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mob-menu-nav-tel {
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 8vw;
   line-height: calc(40 / 34);
   color: var(--accent-color);
   letter-spacing: 0.02em;
@@ -944,6 +986,7 @@ ul {
 .mob-menu-social-link-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -955,6 +998,11 @@ ul {
   font-size: 18px;
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
+  margin-right: 10px;
+}
+
+.mob-menu-social-item-link:not(:last-child) {
+  margin-right: 10px;
 }
 
 .mob-menu-wrapper {
@@ -1396,6 +1444,8 @@ ul {
 }
 
 .work-examples-wrapper {
+  height: 100%;
+  flex-grow: 1;
   position: relative;
   overflow: hidden;
 }
